@@ -41,22 +41,22 @@ const results = {
         document.getElementById('results').innerHTML = `
             <h2>Test Results</h2>
             <div class="summary-stats">
-                <h3>Overall Performance</h3>
+                <h3>Overall</h3>
                 <p>Total Trials: ${trialData.length}</p>
                 <p>Overall Accuracy: ${stats.overall.accuracy.toFixed(1)}%</p>
                 <p>Average Response Time: ${(stats.overall.avgRT / 1000).toFixed(3)} seconds</p>
                 
-                <h3>Global Target Performance</h3>
+                <h3>Global Target</h3>
                 <p>Trials: ${stats.global.trials}</p>
                 <p>Accuracy: ${stats.global.accuracy.toFixed(1)}%</p>
                 <p>Average Response Time: ${(stats.global.avgRT / 1000).toFixed(3)} seconds</p>
 
-                <h3>Local Target Performance</h3>
+                <h3>Local Target</h3>
                 <p>Trials: ${stats.local.trials}</p>
                 <p>Accuracy: ${stats.local.accuracy.toFixed(1)}%</p>
                 <p>Average Response Time: ${(stats.local.avgRT / 1000).toFixed(3)} seconds</p>
 
-                <h3>Target Absent Performance</h3>
+                <h3>Target Absent</h3>
                 <p>Trials: ${stats.absent.trials}</p>
                 <p>Accuracy: ${stats.absent.accuracy.toFixed(1)}%</p>
                 <p>Average Response Time: ${(stats.absent.avgRT / 1000).toFixed(3)} seconds</p>

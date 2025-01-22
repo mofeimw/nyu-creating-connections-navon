@@ -57,7 +57,7 @@ const test = {
         // set up demo trial
         this.currentTarget = 'H';
         this.currentStimulus = {
-            global: 'S',
+            global: 'E',
             local: 'H',
             containsTarget: true,
             targetPosition: 'Local'

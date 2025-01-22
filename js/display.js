@@ -33,7 +33,7 @@ const display = {
     showDemoInstructions() {
         document.getElementById('target-info').innerHTML = `
             <div class="demo-instructions">
-                <h3>Demo Trial</h3>
+                <h3>Demo</h3>
                 <p>Target letter: H</p>
                 <p>Look at both the large letter shape and the small letters.</p>
                 <p>Click "Yes" if you see H anywhere, "No" if you don't.</p>
