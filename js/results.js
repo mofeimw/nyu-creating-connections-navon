@@ -68,7 +68,7 @@ const results = {
                         <th>Trial</th>
                         <th>Target</th>
                         <th>Large Letter</th>
-                        <th>Small Letters</th>
+                        <th>Small Letter</th>
                         <th>Target Position</th>
                         <th>Response</th>
                         <th>Correct</th>
