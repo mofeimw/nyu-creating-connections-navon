@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NYU Creating Connections Navon Test</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="instructions" class="instructions">
+                <h2>Navon Test</h2>
+                <p>You'll see a large letter made up of smaller letters.</p>
+                <p>Click "Yes" if you see the target letter (either large or small).</p>
+                <p>Click "No" if you don't see the target letter at all.</p>
+                <div class="settings">
+                    <label for="trialCount">Number of trials:</label>
+                    <input type="number" id="trialCount" min="5" max="100" value="20" class="trial-input">
+                </div>
+                <div class="button-container">
+                    <button class="button" onclick="startTest()">Start Test</button>
+                    <button class="button" onclick="startDemo()">Try Demo</button>
+                </div>
+            </div>
+
+            <div id="test-area" style="display: none;">
+                <div id="target-info" class="target-info"></div>
+                <div id="navon-display" class="navon-display"></div>
+                <div id="response-buttons" class="button-container">
+                    <button class="button" onclick="handleResponse(true)">Yes</button>
+                    <button class="button" onclick="handleResponse(false)">No</button>
+                </div>
+            </div>
+
+            <div id="results" style="display: none;"></div>
+        </div>
+
+        <script src="js/letters.js"></script>
+        <script src="js/display.js"></script>
+        <script src="js/test.js"></script>
+        <script src="js/results.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
